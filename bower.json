@@ -1,0 +1,23 @@
+{
+  "name": "koapp-widget-communicator",
+  "homepage": "https://github.com/KingofApp/koapp-widget-communicator",
+  "authors": [
+    "José Vicente Sogorb Morón <joviwap@gmail.com>"
+  ],
+  "description": "library to comunicate koapp custom iframes",
+  "main": "main.js",
+  "moduleType": [],
+  "keywords": [
+    "koapp",
+    "iframe",
+    "communication"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
