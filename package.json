@@ -1,0 +1,34 @@
+{
+  "name": "koapp-widget-communicator",
+  "version": "1.0.3",
+  "description": "library to comunicate koapp custom iframes",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingofApp/koapp-widget-communicator.git"
+  },
+  "keywords": [
+    "koapp",
+    "iframe",
+    "communication"
+  ],
+  "author": "José Vicente Sogorb Morón <joviwap@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KingofApp/koapp-widget-communicator/issues"
+  },
+  "homepage": "https://github.com/KingofApp/koapp-widget-communicator#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-nightwatch": "^0.5.3",
+    "nightwatch": "^0.9.5"
+  }
+}

@@ -1,0 +1,62 @@
+20:36:18.649 INFO - Launching a standalone Selenium Server
+Setting system property webdriver.chrome.driver to ./bin/chromedriver
+20:36:18.681 INFO - Java: Oracle Corporation 25.65-b01
+20:36:18.681 INFO - OS: Mac OS X 10.11.5 x86_64
+20:36:18.688 INFO - v2.53.1, with Core v2.53.1. Built from revision a36b8b1
+20:36:18.751 INFO - Driver provider org.openqa.selenium.ie.InternetExplorerDriver registration is skipped:
+registration capabilities Capabilities [{ensureCleanSession=true, browserName=internet explorer, version=, platform=WINDOWS}] does not match the current platform MAC
+20:36:18.752 INFO - Driver provider org.openqa.selenium.edge.EdgeDriver registration is skipped:
+registration capabilities Capabilities [{browserName=MicrosoftEdge, version=, platform=WINDOWS}] does not match the current platform MAC
+20:36:18.752 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+20:36:18.752 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+20:36:18.754 INFO - Driver class not found: org.openqa.selenium.htmlunit.HtmlUnitDriver
+20:36:18.754 INFO - Driver provider org.openqa.selenium.htmlunit.HtmlUnitDriver is not registered
+20:36:18.801 INFO - RemoteWebDriver instances should connect to: http://127.0.0.1:4445/wd/hub
+20:36:18.801 INFO - Selenium Server is up and running
+20:36:19.007 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]])
+20:36:19.015 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]
+Starting ChromeDriver 2.22.397929 (fb72fb249a903a0b1041ea71eb4c8b3fa0d9be5a) on port 19256
+Only local connections are allowed.
+20:36:19.856 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Test, browserName=chrome, javascriptEnabled=true, platform=ANY}]]
+20:36:19.867 INFO - Executing: [get: http://localhost:3101/example/main.html])
+20:36:20.167 INFO - Done: [get: http://localhost:3101/example/main.html]
+20:36:20.175 INFO - Executing: [find elements: By.cssSelector: body])
+20:36:20.205 INFO - Done: [find elements: By.cssSelector: body]
+20:36:20.208 INFO - Executing: [is displayed: 0 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: body]])
+20:36:20.221 INFO - Done: [is displayed: 0 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: body]]
+20:36:21.231 INFO - Executing: [find element: By.cssSelector: #main #comm p:nth-child(1)])
+20:36:21.246 INFO - Done: [find element: By.cssSelector: #main #comm p:nth-child(1)]
+20:36:21.249 INFO - Executing: [get text: 1 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(1)]])
+20:36:21.270 INFO - Done: [get text: 1 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(1)]]
+20:36:21.275 INFO - Executing: [find element: By.cssSelector: #main #comm p:nth-child(2)])
+20:36:21.291 INFO - Done: [find element: By.cssSelector: #main #comm p:nth-child(2)]
+20:36:21.294 INFO - Executing: [get text: 2 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(2)]])
+20:36:21.312 INFO - Done: [get text: 2 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(2)]]
+20:36:21.316 INFO - Executing: [find element: By.cssSelector: #main #comm p:nth-child(3)])
+20:36:21.331 INFO - Done: [find element: By.cssSelector: #main #comm p:nth-child(3)]
+20:36:21.334 INFO - Executing: [get text: 3 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(3)]])
+20:36:21.351 INFO - Done: [get text: 3 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(3)]]
+20:36:21.355 INFO - Executing: [find element: By.cssSelector: #main #comm p:nth-child(4)])
+20:36:21.373 INFO - Done: [find element: By.cssSelector: #main #comm p:nth-child(4)]
+20:36:21.376 INFO - Executing: [get text: 4 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(4)]])
+20:36:21.392 INFO - Done: [get text: 4 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #main #comm p:nth-child(4)]]
+20:36:21.396 INFO - Executing: [switch to frame: 0])
+20:36:21.410 INFO - Done: [switch to frame: 0]
+20:36:21.415 INFO - Executing: [find element: By.cssSelector: #comm p:nth-child(1)])
+20:36:21.432 INFO - Done: [find element: By.cssSelector: #comm p:nth-child(1)]
+20:36:21.435 INFO - Executing: [get text: 5 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(1)]])
+20:36:21.452 INFO - Done: [get text: 5 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(1)]]
+20:36:21.456 INFO - Executing: [find element: By.cssSelector: #comm p:nth-child(2)])
+20:36:21.471 INFO - Done: [find element: By.cssSelector: #comm p:nth-child(2)]
+20:36:21.474 INFO - Executing: [get text: 6 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(2)]])
+20:36:21.490 INFO - Done: [get text: 6 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(2)]]
+20:36:21.495 INFO - Executing: [find element: By.cssSelector: #comm p:nth-child(3)])
+20:36:21.510 INFO - Done: [find element: By.cssSelector: #comm p:nth-child(3)]
+20:36:21.513 INFO - Executing: [get text: 7 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(3)]])
+20:36:21.532 INFO - Done: [get text: 7 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(3)]]
+20:36:21.537 INFO - Executing: [find element: By.cssSelector: #comm p:nth-child(4)])
+20:36:21.551 INFO - Done: [find element: By.cssSelector: #comm p:nth-child(4)]
+20:36:21.554 INFO - Executing: [get text: 8 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(4)]])
+20:36:21.572 INFO - Done: [get text: 8 [[ChromeDriver: chrome on MAC (610f2b8852fa2e1eb73c023c2a298bba)] -> css selector: #comm p:nth-child(4)]]
+20:36:21.575 INFO - Executing: [delete session: a28aa697-5ec2-4551-8bbd-8e7803ce8493])
+20:36:21.647 INFO - Done: [delete session: a28aa697-5ec2-4551-8bbd-8e7803ce8493]
