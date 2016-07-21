@@ -36,7 +36,7 @@ The purpose is to simplify a basic communication protocol between the 2 pages.
 
 This object contains all the function you can use in the iframe file.
 
-A full iframe communcation code example can be found [here](./test/iframe.html)
+A full iframe communcation code example can be found [here](./test/iframe.html).
 
 ### ready()
 
@@ -83,7 +83,7 @@ This object contains all the function that can be used in the Koapp main
 platform. *This information is useless unless you are modifying the Koapp
 builder page*.
 
-A full iframe communcation code example can be found [here](./test/main.html)
+A full iframe communcation code example can be found [here](./test/main.html).
 
 ### onReady()
 
