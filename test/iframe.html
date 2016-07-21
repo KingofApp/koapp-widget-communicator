@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <script src="../main.js"></script>
+    <script src="print.js"></script>
+    <script>
+      var changedData = {data:2};
+      document.addEventListener("DOMContentLoaded", function(event) {
+        print('ready');
+        koappComm.iframe.ready();
+        koappComm.iframe.onData(function(data){
+          print('Data received: '+JSON.stringify(data));
+          print('Sending data '+JSON.stringify(changedData));
+          koappComm.iframe.sendData({data:2});
+          print('Ready to close');
+          koappComm.iframe.close();
+        })
+      });
+    </script>
+  </head>
+  <body id="comm">
+  </body>
+
+<html>
