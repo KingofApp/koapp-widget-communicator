@@ -6,7 +6,7 @@ widget for modules and services.
 It sets a global object defined as `koappCom`. This object contains two object
 with 4 categories in them.
 
-```JSON
+```json
 {
   "iframe": {
     "ready"   : Function,
@@ -35,6 +35,8 @@ The purpose is to simplify a basic communication protocol between the 2 pages.
 ## iframe
 
 This object contains all the function you can use in the iframe file.
+
+A full iframe communcation code example can be found [here](./test/iframe.html).
 
 ### ready()
 
@@ -80,6 +82,8 @@ koappCom.iframe.close();
 This object contains all the function that can be used in the Koapp main
 platform. *This information is useless unless you are modifying the Koapp
 builder page*.
+
+A full iframe communcation code example can be found [here](./test/main.html).
 
 ### onReady()
 
