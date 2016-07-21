@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="../main.js"></script>
+    <script src="print.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var iframe = document.getElementById('iframe').contentWindow;
+      var data = {data:1};
+
+      koappComm.main.onReady(function(){
+        print('iframe ready');
+        print('sending data to iframe '+ JSON.stringify(data));
+        koappComm.main.sendData(iframe, data);
+      });
+
+      koappComm.main.onData(function(data){
+        print('data received: '+ JSON.stringify(data));
+      });
+
+      koappComm.main.onClose(function(){
+        print('ready to close iframe');
+      });
+
+      // window.addEventListener("message", function(msg){
+      //   console.log('received msg',msg.data);
+      //   if(msg.data.type === 'ready'){
+      //     print('iframe ready');
+      //
+      //     print('sending data to iframe '+ JSON.stringify(data));
+      //     iframe.postMessage(data, '*');
+      //   }
+      //   if(msg.data.type === 'data')  print('data received: '+ JSON.stringify(msg.data.data));
+      //   if(msg.data.type === 'close') print('ready to close iframe');
+      // });
+
+    });
+    </script>
+  </head>
+  <body>
+    <div>
+      <div id="main" style="float: left; width:50%">
+        <h3>parent</h3>
+        <div id="comm" style="width: 80%; margin: 20px; padding: 10px; border: 1px blue solid"></div>
+      </div>
+
+      <div id="child" style="float: left">
+        <h3>iframe</h3>
+        <iframe id="iframe" src="iframe.html" width="100%" height="300px" style="margin: 2px 0; border: 1px red solid"></iframe>
+      </div>
+    </div>
+  </body>
+
+<html>
