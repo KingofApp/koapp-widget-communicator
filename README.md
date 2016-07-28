@@ -3,7 +3,7 @@
 This library simplifies the communication between Koapp Platform and the custom
 widget for modules and services.
 
-It sets a global object defined as `koappCom`. This object contains two object
+It sets a global object defined as `koappComm`. This object contains two object
 with 4 categories in them.
 
 ```json
@@ -44,7 +44,7 @@ This function is used to inform the main page that the iframe is ready to
 receive information. It does not accept parameters.
 
 ```javascript
-koappCom.iframe.ready()
+koappComm.iframe.ready()
 ```
 
 ### onData(callback)
@@ -53,7 +53,7 @@ This function is used to receive [module/service scope data](https://github.com/
 It accepts a callback function as a parameter.
 
 ```javascript
-koappCom.iframe.ready(function(data){
+koappComm.iframe.onData(function(data){
   console.log(data);
 });
 ```
@@ -65,7 +65,7 @@ user. It accepts one parameter to send the data.
 
 ```javascript
 var newData = {bar: "foo"}
-koappCom.iframe.sendData(newData);
+koappComm.iframe.sendData(newData);
 ```
 
 ### close()
@@ -74,7 +74,7 @@ This function is used to inform the main page that the iframe is ready to
 be closed. It does not accept parameters.
 
 ```javascript
-koappCom.iframe.close();
+koappComm.iframe.close();
 ```
 
 ## Main
@@ -91,7 +91,7 @@ This function is used to inform the main page that the iframe is ready to
 receive information. It does not accept parameters.
 
 ```javascript
-koappCom.main.onReady(function(){
+koappComm.main.onReady(function(){
   console.log("the iframe is ready");
 });
 ```
@@ -102,7 +102,7 @@ This function receives [module/service scope data](https://github.com/KingofApp/
 back from the iframe. It accepts a callback function as a parameter.
 
 ```javascript
-koappCom.main.ready(function(data){
+koappComm.main.ready(function(data){
   console.log(data);
 });
 ```
@@ -114,7 +114,7 @@ to the iframe. It accepts one parameter to send the data.
 
 ```javascript
 var newData = {bar: "foo"};
-koappCom.main.sendData(newData);
+koappComm.main.sendData(newData);
 ```
 
 
@@ -124,7 +124,7 @@ This function is used to inform the main page that the main is ready to
 be closed. It does not accept parameters.
 
 ```javascript
-koappCom.main.onClose(function(){
+koappComm.main.onClose(function(){
   console.log('the iframe can be closed');
 });
 ```
